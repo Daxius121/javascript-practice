@@ -15,11 +15,15 @@ tipPercentage.addEventListener('input', function() { // listen for the user to i
 
 });
 partySize.addEventListener('input', function() { // listen for the user to input something   
-    p.innerHTML = total.value / (Number(partySize.value)); // outputs how much each person pays
+    showSplitTotal()
 });
 
 function calculate() {
     let currentTotal = Number(subTotal.value); // convert input value to a number
     let tip = currentTotal * (Number(tipPercentage.value) / 100); // calculates tip
     total.value = currentTotal + tip; // adds tip to total
+}
+
+function showSplitTotal() {
+    p.innerHTML = total.value / (Number(partySize.value)); // outputs how much each person pays
 }
