@@ -23,6 +23,3 @@ function calculate() {
     let tip = currentTotal * (Number(tipPercentage.value) / 100); // calculates tip
     total.value = currentTotal + tip; // adds tip to total
 }
-// tipPercentage.value = 20;
-// total.value = 120;
-// partySize.value = 2;
