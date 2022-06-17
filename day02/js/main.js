@@ -1,0 +1,5 @@
+console.log('Supercalifragilisticexpialidocious'.length)
+console.log(7)
+console.log(BigInt(7))
+console.log(typeof BigInt(7))
+console.log(typeof (7))
